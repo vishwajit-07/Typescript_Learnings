@@ -42,7 +42,7 @@ class Department {
     constructor(n: string) {
         this.name = n;
         this.employees = [];
-        this.id = "D1";
+        this.id = "D2";
     }
     describe() {
         console.log(`Department (${this.id}) ${this.name}`);
@@ -127,24 +127,24 @@ class Department2 {
     }
 }
 const newSalary = Department2.viewSalary(); //here we directly call method without creating object
-console.log(newSalary); 
+console.log(newSalary);
 
 
 //abstract classes
-abstract class Department3{
-    protected employee:string[]=[];
-    protected readonly id:string;
-    name:string;
-    constructor(n:string,id:string){
-        this.name=n;
-        this.id=id;
+abstract class Department3 {
+    protected employee: string[] = [];
+    protected readonly id: string;
+    name: string;
+    constructor(n: string, id: string) {
+        this.name = n;
+        this.id = id;
     }
-    abstract describe(this:Department3):void;
-    abstract displayName():void;
+    abstract describe(this: Department3): void;
+    abstract displayName(): void;
 }
-class SubClass extends Department3{
-    constructor(id:string){
-        super(id,"D1");
+class SubClass extends Department3 {
+    constructor(id: string) {
+        super(id, "D1");
     }
     describe(): void {
         console.log(`Department ${this.id}`);

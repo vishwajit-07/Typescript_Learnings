@@ -33,7 +33,7 @@ class Department {
     constructor(n) {
         this.name = n;
         this.employees = [];
-        this.id = "D1";
+        this.id = "D2";
     }
     describe() {
         console.log(`Department (${this.id}) ${this.name}`);

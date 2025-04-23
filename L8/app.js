@@ -11,7 +11,7 @@ console.log(person);
 //     return { ...obj1, ...obj2, ...obj3 }
 // }
 // console.log(merge({ name: "Vish" }, { age: 24 }, { role: "Web Developer" }));
-//4 Generic Constrains
+//4 Generic Constraints
 function creatObject(key, value, isActive) {
     return ({ key: key, value: value, isActive: isActive });
 }

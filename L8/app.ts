@@ -20,7 +20,7 @@ console.log(person);
 // console.log(merge({ name: "Vish" }, { age: 24 }, { role: "Web Developer" }));
 
 
-//4 Generic Constrains
+//4 Generic Constraints
 function creatObject<T extends number, U extends string, V extends boolean>(key: T, value: U, isActive: V): { key: T, value: U, isActive: V } {
     return ({ key, value, isActive });
 }
